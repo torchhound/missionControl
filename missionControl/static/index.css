@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900); 
 
 .square {
     float:left;
@@ -26,7 +26,7 @@
     display:table-cell;
     vertical-align:middle;
 }
-/*  For list */
+
 ul{
     text-align:left;
     margin:5% 0 0;
@@ -39,20 +39,20 @@ li{
 }
 
 
-/*  For responsive images */
+/*  For responsive images 
 
 .content .rs{
     width:auto;
     height:auto;
     max-height:90%;
     max-width:100%;
-}
-/*  For responsive images as background */
+}*/
+/*  For responsive images as background 
 
 .bg{
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    background-size:cover; 
     color:#fff;
 }
 
@@ -64,9 +64,9 @@ li{
 }
 .img3{
     background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
-}
+}*/
 
-/*  possibly unnecessary */
+/*  possibly unnecessary 
 
 
 body {
@@ -115,4 +115,4 @@ p{
 #bottom a:hover{
     background:#ECECEC;
     border:1px solid #fff;
-}
+} */
