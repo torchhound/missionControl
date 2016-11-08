@@ -1,5 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900); 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212121;
+}
+
+.links{
+	float: right;
+	padding-top: 1cm;
+}
+
+li a {
+    display: block;
+    color: #c6c6c6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .square {
     float:left;
     position: relative;
