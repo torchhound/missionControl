@@ -13,13 +13,13 @@
 <header>
 				<ul>
 				<li>
-					<a class = "links" href="">Living Room</a>
+					<a class = "links" href="{% url 'livingRoom' %}">Living Room</a>
 				</li>
 				<li>
-					<a class = "links" href="">Kitty Corner</a>
+					<a class = "links" href="{% url 'kittyCorner' %}">Kitty Corner</a>
 				</li>
 				<li>
-					<a class = "links" href="">Bathroom</a>
+					<a class = "links" href="{% url 'bathroom' %}">Bathroom</a>
 				</li>
 				</ul>
 </header>
@@ -28,7 +28,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul>Let there be light!</ul>
+                <ul>On</ul>
             </div>
         </div>
     </div>
@@ -37,7 +37,25 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><input id="livingRoomPercentage" type="range" min="0" max="100" step="10" /> </ul>
+                <ul>Off</ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>Dim</ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>Night</ul>
             </div>
         </div>
     </div>
