@@ -8,6 +8,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 	</head>
 <body>
 <header>
@@ -30,7 +31,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="on" action="" method="post"><button name="on" type="button">On</button></form></ul>
+                <ul><form name="on" action="" method="POST"><button name="on" type="button">On</button></form></ul>
             </div>
         </div>
     </div>
@@ -39,7 +40,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="off" action="" method="post"><button name="off" type="button">Off</button></form></ul>
+                <ul><form name="off" action="" method="POST"><button name="off" type="button">Off</button></form></ul>
             </div>
         </div>
     </div>
@@ -48,7 +49,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="dim" action="" method="post"><button name="dim" type="button">Dim</button></form></ul>
+                <ul><form name="dim" action="" method="POST"><button name="dim" type="button">Dim</button></form></ul>
             </div>
         </div>
     </div>
@@ -57,7 +58,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="night" action="" method="post"><button name="night" type="button">Night</button></form></ul>
+                <ul><form name="night" action="" method="POST"><button name="night" type="button">Night</button></form></ul>
             </div>
         </div>
     </div>

@@ -14,6 +14,8 @@ def livingRoom(request):
 		requests.post("http://localhost:5000/livingroom", data = {"dim":True})
 	elif request.POST.get("night", False):
 		requests.post("http://localhost:5000/livingroom", data = {"night":True})
+	else:
+		return HttpRequest(status=400)
 
 def kittyCorner(request):
 	if request.method == "GET":
@@ -27,6 +29,8 @@ def kittyCorner(request):
 		requests.post("http://localhost:5000/livingroom", data = {"dim":True})
 	elif request.POST.get("night", False):
 		requests.post("http://localhost:5000/livingroom", data = {"night":True})
+	else:
+		return HttpRequest(status=400)
 
 def bathroom(request):
     template = loader.get_template("bathroom.html")
