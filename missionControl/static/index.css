@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900); 
 
-ul {
+.headerUL {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ ul {
 	padding-top: 1cm;
 }
 
-li a {
+.headerLI a {
     display: block;
     color: #c6c6c6;
     text-align: center;
