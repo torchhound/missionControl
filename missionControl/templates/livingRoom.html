@@ -2,36 +2,35 @@
 <html>
 	<head>	
 		<meta http-equiv = "Content-Type" content = "text/html" charset = "UTF-8">
-
 		<title>Mission Control</title>
-
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
 		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 	</head>
 <body>
-<header>
-				<ul class="headerUL">
-				<li class="headerLI">
-					<a class = "links" href="{% url 'livingRoom' %}">Living Room</a>
-				</li>
-				<li class="headerLI">
-					<a class = "links" href="{% url 'kittyCorner' %}">Kitty Corner</a>
-				</li>
-				<li class="headerLI">
-					<a class = "links" href="{% url 'bathroom' %}">Bathroom</a>
-				</li>
-				</ul>
-</header>
+	<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Mission Control</h1>
+    </div>
+    <ul class="nav nav-justified">
+      <li><a href="{% url 'livingRoom' %}">Living Room</a></li>
+      <li><a href="{% url 'kittyCorner' %}">Kitty Corner</a></li>
+      <li><a href="{% url 'bathroom' %}">Bathroom</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<h1 class="well">Living Room</h1>
 
-<h1>Living Room</h1>
-
 <div class="square">
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="on" action="/lron" method="POST"><button name="on" type="button">On</button></form></ul>
+                <ul><form name="on" action="/lron" method="POST"><button name="on" type="button" class="btn btn-primary btn-lg">On</button></form></ul>
             </div>
         </div>
     </div>
@@ -40,7 +39,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="off" action="/lroff" method="POST"><button name="off" type="button">Off</button></form></ul>
+                <ul><form name="off" action="/lroff" method="POST"><button name="off" type="button" class="btn btn-primary btn-lg">Off</button></form></ul>
             </div>
         </div>
     </div>
@@ -49,7 +48,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="dim" action="/lrdim" method="POST"><button name="dim" type="button">Dim</button></form></ul>
+                <ul><form name="dim" action="/lrdim" method="POST"><button name="dim" type="button" class="btn btn-primary btn-lg">Dim</button></form></ul>
             </div>
         </div>
     </div>
@@ -58,7 +57,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul><form name="night" action="/lrnight" method="POST"><button name="night" type="button">Night</button></form></ul>
+                <ul><form name="night" action="/lrnight" method="POST"><button name="night" type="button" class="btn btn-primary btn-lg">Night</button></form></ul>
             </div>
         </div>
     </div>
@@ -66,6 +65,7 @@
 
 <div id="bottom">
 
+</div>
 </div>
 </body>
 </html>

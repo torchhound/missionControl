@@ -2,33 +2,35 @@
 <html>
 	<head>	
 		<meta http-equiv = "Content-Type" content = "text/html" charset = "UTF-8">
-
 		<title>Mission Control</title>
-
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
 		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 	</head>
 <body>
-<header>
-				<ul class="headerUL">
-				<li class="headerLI">
-					<a class = "links" href="{% url 'livingRoom' %}">Living Room</a>
-				</li>
-				<li class="headerLI">
-					<a class = "links" href="{% url 'kittyCorner' %}">Kitty Corner</a>
-				</li>
-				<li class="headerLI">
-					<a class = "links" href="{% url 'bathroom' %}">Bathroom</a>
-				</li>
-				</ul>
-</header>
+	<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Mission Control</h1>
+    </div>
+    <ul class="nav nav-justified">
+      <li><a href="{% url 'livingRoom' %}">Living Room</a></li>
+      <li><a href="{% url 'kittyCorner' %}">Kitty Corner</a></li>
+      <li><a href="{% url 'bathroom' %}">Bathroom</a></li>
+    </ul>
+  </div>
+</nav>
+	<div class="container">
 
-<h1><b>Coming Soon!</b></h1>
-
+	<div class="jumbotron">
+		<h1><b>Coming Soon!</b></h1>
+	</div>
 <div id="bottom">
 
 </div>
+	</div>
 </body>
 </html>
